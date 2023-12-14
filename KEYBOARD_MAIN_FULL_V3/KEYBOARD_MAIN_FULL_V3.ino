@@ -1648,7 +1648,7 @@ void handleReceivedMessage(String message) {
    while(numButton0 != 14 && numButton2 != 1) {PressedButton(0); if(numButton2 == 8) {return;}}
 }
 ////////////////////////////////////////////////////////////////////////////////////////////
-void event() {//PARASES THE STRING BY CHARACTER AND SENDS TO THE PRINT FUNCTION [ event() => chooseSymbol() => symbolDraw() ]
+void event() {//PARSES THE STRING BY CHARACTER AND SENDS TO THE PRINT FUNCTION [ event() => chooseSymbol() => symbolDraw() ]
 int charByteStart, charByteEnd, dobByte, strLen = MyText.length();
 for (charByteStart=0; charByteStart<strLen+0; charByteStart+=dobByte) {
                         if(MyText.charAt(charByteStart) == '\320' ||
