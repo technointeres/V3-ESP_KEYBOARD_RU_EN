@@ -1669,7 +1669,7 @@ void symbolDraw(int shift){//PRINTS SYMBOLS FROM THE PICTURE
   for (row=startX; row<w*scaleX+startX; row+=scaleX) { 
       colo = pgm_read_word(NOTO_FONT_ALL + buffidx + shift*symbolW); //COLOR EVERY POINT OF BITMAP
                                                       symbolWidth++;
-      if(colo != -1) {//-1 IF INT16_T //65535 IF UINT16_T //NOT DRAW TFT_WHITE PIXEL
+      if(colo != -1) {//-1 IF INT16_T //65535 IF UINT16_T //NOT DRAW WHITE PIXEL
                       //if (originalCol != true) {colo = charColo;}//IF YOU NEED A COLOR NOT EXISTING IN THE BITMAP, BUT WITHOUT HALFOTONES
                       tft.fillRect(row,col,scaleX,scaleY,charColo); 
                       //tft.drawPixel(row,col,charColo);
