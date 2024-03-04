@@ -1,7 +1,3 @@
-// Setup for the TTGO T Display
-//#define USER_SETUP_ID 25
-
-// See SetupX_Template.h for all options available
 
 #define ST7789_DRIVER
 //#define TFT_SDA_READ   // Display has a bidirectional SDA pin
