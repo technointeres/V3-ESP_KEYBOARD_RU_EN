@@ -1029,7 +1029,8 @@ void CHECK_SYMBOL() {
 //////////////////////////////////////////////////////////////////////////////////////////// 
 void SEND_STRING_BLE(int r) {
 
-if(r == 1) {Keyboard.press(KEY_LEFT_GUI); Keyboard.print(" "); delay(300); Keyboard.releaseAll();} //WINDOWS+SPACE
+if(r == 1) {//Keyboard.press(KEY_LEFT_GUI); Keyboard.print(" "); delay(300); Keyboard.releaseAll();} //WINDOWS+SPACE
+            Keyboard.press(KEY_LEFT_ALT); Keyboard.press(KEY_LEFT_SHIFT); delay(300); Keyboard.releaseAll();} //ALT+SHIFT
            
 if(r == 0) {int xProgressBar = 0;
             tft.fillRect(0, 140, 240, 7, color565(0,0,27)); //PROGRESS BAR BACKGROUND
@@ -1092,7 +1093,8 @@ void BLE_KEYBOARD() {
      if(numButton2 == 3)  {Keyboard.write(KEY_LEFT_ARROW);}  //
      if(numButton2 == 4)  {Keyboard.write(KEY_RIGHT_ARROW);} //
       
-     if(numButton2 == 10) {Keyboard.press(KEY_LEFT_GUI); Keyboard.print(" "); delay(300); Keyboard.releaseAll();} //WINDOWS+SPACE 
+     if(numButton2 == 10) {//Keyboard.press(KEY_LEFT_GUI); Keyboard.print(" "); delay(300); Keyboard.releaseAll();} //WINDOWS+SPACE 
+                           Keyboard.press(KEY_LEFT_ALT); Keyboard.press(KEY_LEFT_SHIFT); delay(300); Keyboard.releaseAll();} //ALT+SHIFT                 
       
 
       CHECK_SYMBOL(); if(StrToBLE != "") {Keyboard.print(StrToBLE);} 
